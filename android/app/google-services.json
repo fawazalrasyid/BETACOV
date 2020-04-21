@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "16635369706",
+    "firebase_url": "https://betacov-73e2c.firebaseio.com",
+    "project_id": "betacov-73e2c",
+    "storage_bucket": "betacov-73e2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16635369706:android:efa8ddfec4778a43b51f93",
+        "android_client_info": {
+          "package_name": "com.fawazalrasyid.betacov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16635369706-d9pveck30scddf5sfjh7tgl7tc7ptoor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAirl90EZrsQDY8IixbMH3sTrDRK_BP5ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16635369706-d9pveck30scddf5sfjh7tgl7tc7ptoor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
