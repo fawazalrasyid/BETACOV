@@ -1,4 +1,5 @@
 import 'package:betacov/components/Header.dart';
+import 'package:betacov/utils/Style.dart';
 import 'package:flutter/material.dart';
 
 class Informasi extends StatefulWidget {
@@ -7,10 +8,6 @@ class Informasi extends StatefulWidget {
 }
 
 class _InformasiState extends State<Informasi> {
-  TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   bool widgetCardCovid = false;
   bool widgetCardCegah = false;
   bool widgetCardKenali = false;
@@ -89,8 +86,9 @@ class _InformasiState extends State<Informasi> {
               ),
             ],
           ),
-          GestureDetector(
-            onTap: () {
+          IconButton(
+            icon: buildArrow(onn),
+            onPressed: () {
               if (onpress == "widgetCardCovid") {
                 setState(() {
                   widgetCardCovid = !widgetCardCovid;
@@ -105,7 +103,6 @@ class _InformasiState extends State<Informasi> {
                 });
               }
             },
-            child: buildArrow(onn),
           ),
         ],
       ),

@@ -12,10 +12,6 @@ class HomeWidget extends StatefulWidget {
 }
 
 class _HomeWidgetState extends State<HomeWidget> {
-  TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   @override
   void initState() {
     super.initState();

@@ -9,11 +9,6 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
-  final PageStorageBucket bucket = PageStorageBucket();
 
   bool clickedCentreFAB = false;
 

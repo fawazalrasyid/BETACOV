@@ -1,13 +1,10 @@
 import 'package:betacov/screens/AppInfo.dart';
+import 'package:betacov/utils/Style.dart';
 import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Header extends StatelessWidget {
-  final TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  final TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  final TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   final image;
 
   Header({this.image});
@@ -117,7 +114,8 @@ class Header extends StatelessWidget {
                             ),
                           ],
                         ),
-                        onTap: () => _launchInBrowser("http://fawazalrasyid.xyz/betacov/"),
+                        onTap: () => _launchInBrowser(
+                            "http://fawazalrasyid.xyz/betacov/"),
                       ),
                       value: 'Update',
                     ),

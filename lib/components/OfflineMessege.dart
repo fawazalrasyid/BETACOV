@@ -1,11 +1,8 @@
+import 'package:betacov/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class OfflineMessege extends StatelessWidget {
-  final TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  final TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  final TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

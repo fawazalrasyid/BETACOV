@@ -11,10 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

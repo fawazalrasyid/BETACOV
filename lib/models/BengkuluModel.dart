@@ -4,7 +4,7 @@ class BengkuluModel {
   final String deaths;
   final String odp;
   final String pdp;
-  final String lastupdate;
+  final DateTime lastupdate;
 
   BengkuluModel({
     this.confirmed,

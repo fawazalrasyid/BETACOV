@@ -15,10 +15,11 @@ class IndonesiaProvider with ChangeNotifier {
     notifyListeners();
 
     indonesia = IndonesiaModel(
-        confirmed: result['confirmed']['value'],
-        recovered: result['recovered']['value'],
-        deaths: result['deaths']['value'],
-        lastupdate: result['metadata']['lastUpdatedAt']);
+      confirmed: result['confirmed']['value'],
+      recovered: result['recovered']['value'],
+      deaths: result['deaths']['value'],
+      lastupdate: DateTime.parse(result['metadata']['lastUpdatedAt']).toLocal(),
+    );
 
     return indonesia;
   }

@@ -10,17 +10,18 @@ class BengkuluProvider with ChangeNotifier {
 
   Future<BengkuluModel> getBengkuluProvider() async {
     final response = await api.client.get("${api.bengkuluUrl}");
-    final resultBengkulu = json.decode(response.body) as Map<String, dynamic>;
+    final result = json.decode(response.body) as Map<String, dynamic>;
 
     notifyListeners();
 
     bengkulu = BengkuluModel(
-        confirmed: resultBengkulu['confirmed']['value'],
-        recovered: resultBengkulu['recovered']['value'],
-        deaths: resultBengkulu['deaths']['value'],
-        pdp: resultBengkulu['pdp']['value'],
-        odp: resultBengkulu['odp']['value'],
-        lastupdate: resultBengkulu['metadata']['lastUpdatedAt']);
+        confirmed: result['confirmed']['value'],
+        recovered: result['recovered']['value'],
+        deaths: result['deaths']['value'],
+        pdp: result['pdp']['value'],
+        odp: result['odp']['value'],
+        lastupdate: DateTime.parse(
+            result['metadata']['lastUpdatedAt'] + "T18:00:00+07:00"));
 
     return bengkulu;
   }

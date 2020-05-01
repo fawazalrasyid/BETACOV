@@ -1,11 +1,9 @@
+import 'package:betacov/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
+import 'package:intl/intl.dart';
 
 class CardBengkulu extends StatelessWidget {
-  final TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  final TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  final TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   final confirmed;
   final recovered;
   final deaths;
@@ -20,6 +18,8 @@ class CardBengkulu extends StatelessWidget {
       this.odp,
       this.pdp,
       this.lastupdate});
+
+  final DateFormat dayFormat = DateFormat("d MMM yyyy HH:mm:ss");
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +133,7 @@ class CardBengkulu extends StatelessWidget {
                     styleBold.copyWith(fontSize: 16, color: Color(0xff353535)),
               ),
               Text(
-                "Last Update " + lastupdate.toString(),
+                dayFormat.format(lastupdate),
                 style:
                     styleBold.copyWith(fontSize: 12, color: Color(0xFF8E8E8E)),
               )

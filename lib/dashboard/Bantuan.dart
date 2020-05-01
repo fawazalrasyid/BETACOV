@@ -1,4 +1,5 @@
 import 'package:betacov/components/Header.dart';
+import 'package:betacov/utils/Style.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -8,10 +9,6 @@ class Bantuan extends StatefulWidget {
 }
 
 class _BantuanState extends State<Bantuan> {
-  TextStyle styleBold = TextStyle(fontFamily: 'PoppinsBold');
-  TextStyle styleMedium = TextStyle(fontFamily: 'PoppinsMedium');
-  TextStyle styleRegular = TextStyle(fontFamily: 'PoppinsRegular');
-
   bool widgetRumahsakit = false;
   bool widgetCallcentre = false;
 
@@ -206,8 +203,9 @@ class _BantuanState extends State<Bantuan> {
               ),
             ),
             SizedBox(width: 18.0),
-            GestureDetector(
-              onTap: () {
+            IconButton(
+              icon: buildArrow(onn),
+              onPressed: () {
                 if (onpress == "widgetRumahsakit") {
                   setState(() {
                     widgetRumahsakit = !widgetRumahsakit;
@@ -218,7 +216,6 @@ class _BantuanState extends State<Bantuan> {
                   });
                 }
               },
-              child: buildArrow(onn),
             ),
           ],
         ),
@@ -345,55 +342,55 @@ class _BantuanState extends State<Bantuan> {
     return Column(
       children: <Widget>[
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rsmy.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/rsmy.png?alt=media&token=77f04843-e102-4504-870b-194a58b0270c",
           "RSUD M Yunus Bengkulu",
           "Telp (0736) 51111",
           "https://goo.gl/maps/XEMwnyzDafdrX3Vy8",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/bengkuluutara.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkuluutara.png?alt=media&token=1b97e69b-44ab-4de8-a4ae-26989f96bd74",
           "RSUD Argamakmur",
           "Telp (0737) 521118",
           "https://goo.gl/maps/ZErA9nFUyz9D89y59",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-            "http://bengkulutanggapcovid.000webhostapp.com/assets/bengkuluselatan.png",
+            "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkuluselatan.png?alt=media&token=063737e7-469d-4668-8333-49a88006b47e",
             "RSUD Hasanuddin Damrah Manna",
             "Telp 085381637684",
             "https://goo.gl/maps/FL4AY6dK5KXzN3G26"),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/mukomuko.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/mukomuko.png?alt=media&token=9f6e4773-c2c7-4e75-af25-7c38892e628a",
           "RSUD Mukomuko",
           "Telp (0736) 52343466",
           "https://goo.gl/maps/ASxorB6QmjZkVx6J7",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rscurup.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/rscurup.png?alt=media&token=5e13eb4e-7a4a-405f-8794-6cf18f3eb1b4",
           "RSUD Curup",
           "Telp (0732) 21118",
           "https://goo.gl/maps/mjt9Zaxnuu6b7ms39",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rsdkt.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/rsdkt.png?alt=media&token=2f0c7065-7415-4ce2-b9be-1e8f505dc612",
           "RS DKT Bengkulu",
           "Telp 081379452765",
           "https://goo.gl/maps/dJkiFN2kns4QXTZcA",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rsbhayangkara.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/rsbhayangkara.png?alt=media&token=9407773b-7f8f-4fa6-8985-d6c046a1cd42",
           "Rs Bhayangkara Jitra",
           "Telp (0736) 341086",
           "https://goo.gl/maps/RCduA6QiATFjLdPr7",
         ),
         SizedBox(height: 8.0),
         buildChildcard(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rshd.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/rshd.png?alt=media&token=efc65871-5db8-47ee-9137-23bee2a3920b",
           "RSUD Harapan & Doa",
           "Telp 081379452765",
           "https://goo.gl/maps/WkNqfDj8QAUtPzDr8",
@@ -407,76 +404,76 @@ class _BantuanState extends State<Bantuan> {
     return Column(
       children: <Widget>[
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/bengkuluprov.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/provbengkulu.png?alt=media&token=edfdfa42-887b-4180-a60f-cc0f943743c3",
           "Dinkes Prov Bengkulu",
           "Telp 085283798600",
           "085283798600",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/bengkuluutara.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkuluutara.png?alt=media&token=1b97e69b-44ab-4de8-a4ae-26989f96bd74",
           "Kab Bengkulu Utara",
           "Telp 085377998181",
           "085377998181",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-            "http://bengkulutanggapcovid.000webhostapp.com/assets/bengkulu.png",
+            "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkulu.png?alt=media&token=b70f3f7c-af62-4098-acfd-f1fea000cc69",
             "Kota Bengkulu",
             "Telp 08117105055",
             "08117105055"),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/kaur.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/kaur.png?alt=media&token=2630bbf3-527e-49ca-bf55-4f31ec14b536",
           "Kab Kaur",
           "Telp 085383237543",
           "085383237543",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/kepahiang.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/kephiang.png?alt=media&token=d25fbfd0-1ed5-4d30-a3de-ad5c8a444b69",
           "Kab Kepahiang",
           "Telp 085287277171",
           "085287277171",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/curup.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/curup.png?alt=media&token=dcceb4fd-6316-449b-9f0f-65c582c982b9",
           "Kab Rejang Lebong",
           "Telp 085380316219",
           "085380316219",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/rsbhayangkara.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkulutengah.png?alt=media&token=524a2d74-cf48-488a-b7ce-a01489814c63",
           "Kab Bengkulu Tengah",
           "Telp 082386650401",
           "082386650401",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/mukomuko.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/mukomuko.png?alt=media&token=9f6e4773-c2c7-4e75-af25-7c38892e628a",
           "Kab Muko-Muko",
           "Telp 082387882790",
           "082387882790",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/lebong.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/lebong.png?alt=media&token=086296ae-67cf-44b1-8f13-2425fda3ac09",
           "Kab Lebong",
           "Telp 082165032024",
           "082165032024",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/seluma.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/seluma.png?alt=media&token=32c96c30-be1b-4013-9e67-13bec3067a6b",
           "Kab Seluma",
           "Telp 082165032024",
           "082165032024",
         ),
         SizedBox(height: 8.0),
         buildChildcardphone(
-          "http://bengkulutanggapcovid.000webhostapp.com/assets/mbengkuluselatan.png",
+          "https://firebasestorage.googleapis.com/v0/b/betacov-adee6.appspot.com/o/bengkuluselatan.png?alt=media&token=063737e7-469d-4668-8333-49a88006b47e",
           "Kab Bengkulu Selatan",
           "Telp 085268913505",
           "085268913505",

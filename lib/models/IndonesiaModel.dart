@@ -2,7 +2,7 @@ class IndonesiaModel {
   final int confirmed;
   final int recovered;
   final int deaths;
-  final String lastupdate;
+  final DateTime lastupdate;
 
   IndonesiaModel({
     this.confirmed,
